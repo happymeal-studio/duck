@@ -1,0 +1,128 @@
+[gd_scene format=3 uid="uid://di7lrc3fyv1ci"]
+
+[ext_resource type="Script" uid="uid://kyrlyj0d3m08" path="res://scripts/ground.gd" id="1_ground"]
+[ext_resource type="Script" uid="uid://bfg3ackhdp3rk" path="res://scripts/player.gd" id="2_player"]
+[ext_resource type="Script" uid="uid://catqlb21njnks" path="res://scripts/enemy_spawner.gd" id="3_spawner"]
+[ext_resource type="Script" uid="uid://bnh3yisqh7q8l" path="res://scripts/auto_gun.gd" id="4_gun"]
+[ext_resource type="Script" uid="uid://cc6xlibnhpw1v" path="res://scripts/main.gd" id="5_main"]
+[ext_resource type="Script" uid="uid://baqsrl5jubipq" path="res://scripts/health_bar.gd" id="6_health_bar"]
+
+[node name="Main" type="Node2D" unique_id=1435727678]
+script = ExtResource("5_main")
+
+[node name="Ground" type="Node2D" parent="." unique_id=1831649295]
+script = ExtResource("1_ground")
+
+[node name="Player" type="Node2D" parent="." unique_id=1270899200]
+position = Vector2(640, 360)
+script = ExtResource("2_player")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1582231781]
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.6
+drag_top_margin = 0.6
+drag_right_margin = 0.6
+drag_bottom_margin = 0.6
+
+[node name="AutoGun" type="Node2D" parent="Player" unique_id=937107667]
+script = ExtResource("4_gun")
+
+[node name="Enemies" type="Node2D" parent="." unique_id=1347567437]
+script = ExtResource("3_spawner")
+
+[node name="Projectiles" type="Node2D" parent="." unique_id=273443219 groups=["projectiles"]]
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1747077863]
+
+[node name="MoveHint" type="Label" parent="HUD" unique_id=917487036]
+offset_left = 16.0
+offset_top = 16.0
+theme_override_font_sizes/font_size = 20
+text = "WASD 또는 방향키로 이동"
+
+[node name="KillCount" type="Label" parent="HUD" unique_id=471537897]
+offset_left = 16.0
+offset_top = 48.0
+theme_override_font_sizes/font_size = 20
+text = "처치 0"
+
+[node name="HealthBar" type="Control" parent="HUD" unique_id=665767721]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 16.0
+offset_top = 84.0
+offset_right = 216.0
+offset_bottom = 104.0
+script = ExtResource("6_health_bar")
+
+[node name="TimeLeft" type="Label" parent="HUD" unique_id=1328006437]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 12.0
+offset_bottom = 56.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 36
+text = "3:00"
+horizontal_alignment = 1
+
+[node name="Result" type="Control" parent="HUD" unique_id=1921072090]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="HUD/Result" unique_id=1137472970]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6)
+
+[node name="Title" type="Label" parent="HUD/Result" unique_id=1912150761]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -120.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 56
+text = "승리!"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="HUD/Result" unique_id=1855630880]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -40.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "3분을 버텼어요"
+horizontal_alignment = 1
+
+[node name="Stats" type="Label" parent="HUD/Result" unique_id=711740095]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = 30.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "생존 시간 0:00
+처치 0"
+horizontal_alignment = 1

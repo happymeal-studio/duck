@@ -1,0 +1,19 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Export output
+/build/
+/build.zip
+*.pck
+*.apk
+*.aab
+*.exe
+*.dmg
+
+# Local tooling (sprite-gen skill is its own git repo)
+.claude/
+*.sg-rwlock
+
+# macOS
+.DS_Store

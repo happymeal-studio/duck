@@ -1,0 +1,194 @@
+{
+  "ok": true,
+  "engine": "component-row",
+  "engine_revision": "75166b1fe869",
+  "extract_args": {},
+  "run_dir": "/Users/jion/vampsulike/hero",
+  "cell": {
+    "shape": "square",
+    "width": 256,
+    "height": 256,
+    "safe_margin_x": 24,
+    "safe_margin_y": 24,
+    "size": 256,
+    "safe_margin": 24
+  },
+  "chroma_key": {
+    "name": "green",
+    "hex": "#00FF00",
+    "rgb": [
+      0,
+      255,
+      0
+    ],
+    "selection": "auto",
+    "score": 236.88,
+    "min_subject_distance": 221.94,
+    "background": {
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 11243
+    },
+    "candidates": [
+      {
+        "name": "magenta",
+        "hex": "#FF00FF",
+        "score": 195.81,
+        "min_subject_distance": 190.86,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "green",
+        "hex": "#00FF00",
+        "score": 236.88,
+        "min_subject_distance": 221.94,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "cyan",
+        "hex": "#00FFFF",
+        "score": 159.29,
+        "min_subject_distance": 153.44,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "blue",
+        "hex": "#004DFF",
+        "score": 109.11,
+        "min_subject_distance": 68.38,
+        "clears_erase_radius": false
+      }
+    ],
+    "selection_reason": "highest 1st-percentile subject distance among the 3 candidate(s) clearing the 96 erase radius"
+  },
+  "rows": [
+    {
+      "state": "idle",
+      "frames": 4,
+      "method": "components",
+      "files": [
+        "frames/idle/frame-0.png",
+        "frames/idle/frame-1.png",
+        "frames/idle/frame-2.png",
+        "frames/idle/frame-3.png"
+      ],
+      "frame_records": [
+        {
+          "index": 0,
+          "nontransparent_pixels": 12005,
+          "bbox": [
+            78,
+            27,
+            177,
+            232
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "nontransparent_pixels": 12242,
+          "bbox": [
+            78,
+            24,
+            177,
+            232
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "nontransparent_pixels": 12081,
+          "bbox": [
+            78,
+            27,
+            177,
+            232
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "nontransparent_pixels": 12088,
+          "bbox": [
+            78,
+            27,
+            177,
+            232
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ],
+      "ok": true,
+      "engine_revision": "75166b1fe869"
+    },
+    {
+      "state": "walk",
+      "frames": 4,
+      "method": "components",
+      "files": [
+        "frames/walk/frame-0.png",
+        "frames/walk/frame-1.png",
+        "frames/walk/frame-2.png",
+        "frames/walk/frame-3.png"
+      ],
+      "frame_records": [
+        {
+          "index": 0,
+          "nontransparent_pixels": 14686,
+          "bbox": [
+            61,
+            25,
+            193,
+            232
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "nontransparent_pixels": 13872,
+          "bbox": [
+            67,
+            24,
+            188,
+            232
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "nontransparent_pixels": 14868,
+          "bbox": [
+            56,
+            25,
+            185,
+            232
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "nontransparent_pixels": 14206,
+          "bbox": [
+            60,
+            25,
+            186,
+            232
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ],
+      "ok": true,
+      "engine_revision": "75166b1fe869"
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

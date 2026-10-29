@@ -1,0 +1,41 @@
+{
+  "kind": "sprite-gen-gen-set-report",
+  "run_dir": "/Users/jion/vampsulike/hero",
+  "states": [
+    "idle",
+    "walk"
+  ],
+  "ok": 2,
+  "failed": [],
+  "not_started": [],
+  "items": [
+    {
+      "state": "idle",
+      "out": "/Users/jion/vampsulike/hero/raw/idle.png",
+      "report": "/Users/jion/vampsulike/hero/reports/gen-set/idle.json",
+      "refs": [
+        "/Users/jion/vampsulike/hero/base-source.png",
+        "/Users/jion/vampsulike/hero/references/layout-guides/idle.png"
+      ],
+      "provider": "codex",
+      "provider_resolved_from": "explicit",
+      "auth_source": "codex-login",
+      "elapsed_seconds": 78.3,
+      "ok": true
+    },
+    {
+      "state": "walk",
+      "out": "/Users/jion/vampsulike/hero/raw/walk.png",
+      "report": "/Users/jion/vampsulike/hero/reports/gen-set/walk.json",
+      "refs": [
+        "/Users/jion/vampsulike/hero/base-source.png",
+        "/Users/jion/vampsulike/hero/references/layout-guides/walk.png"
+      ],
+      "provider": "codex",
+      "provider_resolved_from": "explicit",
+      "auth_source": "codex-login",
+      "elapsed_seconds": 56.9,
+      "ok": true
+    }
+  ]
+}
